@@ -12,6 +12,22 @@ $(document).ready(function () {
     searchTreats(queryString);
   });
 
+  $('#saveNewButton').on('click', function(event) {
+    event.preventDefault();
+
+    var treateName = $('#treatNameInput').val();
+    var treatDescription = $('#treatDescriptionInput').val();
+    var treateURL = $('#treatUrlInput').val();
+
+    var newTreat = {
+      name: treateName,
+      description: treatDescription,
+      url: treateURL
+    };
+
+    postTreat(newTreat);
+  });
+
   /**---------- AJAX Functions ----------**/
 
   // GET /treats
@@ -55,13 +71,13 @@ $(document).ready(function () {
     })
     .done(function () {
       console.log('POST /treats sent ', treat);
-
+      clearDom();
       getTreats();
     });
   }
 
   /** ---------- DOM Functions ----------**/
-  
+
   function clearDom() {
     var $treats = $('#treat-display');
     $treats.empty();
