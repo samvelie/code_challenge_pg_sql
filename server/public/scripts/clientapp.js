@@ -38,6 +38,8 @@ $(document).ready(function () {
     .done(function (treatArray) {
       console.log('GET /treats?q=', query, 'returned ', treatArray);
 
+      clearDom();
+
       $.each(treatArray, function (index, treat) {
         appendTreat(treat);
       });
@@ -59,15 +61,18 @@ $(document).ready(function () {
   }
 
   /** ---------- DOM Functions ----------**/
+  
+  function clearDom() {
+    var $treats = $('#treat-display');
+    $treats.empty();
+  }
+
   function appendTreat(treat) {
-    console.log(treat);
     // append a treat to the DOM and add data attributes
     // treat-display -> treat row -> treat
     var $treats = $('#treat-display');
-    console.log($treats);
 
     var treatCount = $treats.children().children().length;
-    console.log(treatCount);
 
     if (treatCount % 2 === 0) {
       // add a treat row
