@@ -6,8 +6,14 @@ Provide students with HTML and JavaScript. JavaScript will include AJAX calls to
 
 Add the following routes. Do them in the suggested order below.
 
-* `GET /treats` returns a list of potential treats (e.g. cupcakes, goldfish, etc) and their image URLs
-* `POST /treats` expects a treat description and link to a url image
+#### Base Mode
+
+* `GET /treats` returns a list of potential treats (e.g. cupcakes, goldfish, etc) and their image URLs.
+* `POST /treats` expects a treat description and link to a url image.
+
+#### Hard Mode
+GET requests can pass some data to the server as part of the URL (ex. see below ```/treats?q=donut```. This stack overflow link was useful to see where the this data is stored on the express request object: [GET parameters after q](http://stackoverflow.com/questions/17007997/how-to-access-the-get-parameters-after-in-express).
+
 * `GET /treats?q=donut` should return only treats that match the query parameter
 
 ## TODO
