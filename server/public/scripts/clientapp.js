@@ -76,7 +76,7 @@ $(document).ready(function () {
 
     var $treat = $('<div class="six columns individual-treat">' +
                   '<div class="image-wrap">' +
-                  '<img src="' + treat.url + '" class="u-max-full-width" />' +
+                  '<img src="' + treat.pic + '" class="u-max-full-width" />' +
                   '<div class="toggle row">' +
                   '<div class="six columns">' +
                   '<button class="edit u-full-width">Edit</button>' +
