@@ -2,7 +2,7 @@
 
 ## Overview
 
-Provide students with HTML and JavaScript. JavaScript will include AJAX calls to a CRUD-capable server (students will create server and database code). 
+Provide students with HTML and JavaScript. JavaScript will include AJAX calls to a CRUD-capable server (students will create server and database code).
 
 Add the following routes. Do them in the suggested order below.
 
@@ -20,7 +20,7 @@ GET requests can pass some data to the server as part of the URL (ex. see below 
 
 1. Fork and clone this repository.
 2. Take some time to look at the given code. What code is needed and what will be removed once the server side code is generated?
-3. Design and create the database. Be sure to commit the create table syntax in the ```create_database.sql``` file.
+3. Design and create the database. Be sure to commit the create table syntax in the `create_database.sql` file.
 4. Build out the server routes described above.
 5. Remove HTML that will be generated via AJAX calls once server-side has been tested.
 

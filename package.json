@@ -8,5 +8,16 @@
     "start": "node server/app.js"
   },
   "author": "antoinette@primeacademy.io",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdszafranski/code_challenge_pg_sql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kdszafranski/code_challenge_pg_sql/issues"
+  },
+  "homepage": "https://github.com/kdszafranski/code_challenge_pg_sql#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }

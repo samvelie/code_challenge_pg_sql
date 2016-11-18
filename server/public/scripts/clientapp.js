@@ -45,14 +45,14 @@ $(document).ready(function () {
     });
   }
 
-  // GET /treats?q=thing
+  // GET /treats/thing
   function searchTreats(query) {
     $.ajax({
       method: 'GET',
-      url: '/treats?q=' + query,
+      url: '/treats/' + query,
     })
     .done(function (treatArray) {
-      console.log('GET /treats?q=', query, 'returned ', treatArray);
+      console.log('GET /treats/', query, 'returned ', treatArray);
 
       clearDom();
 
