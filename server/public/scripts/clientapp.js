@@ -57,6 +57,7 @@ $(document).ready(function () {
       clearDom();
 
       $.each(treatArray, function (index, treat) {
+        // add this treat to the DOM
         appendTreat(treat);
       });
     });
@@ -91,7 +92,7 @@ $(document).ready(function () {
     var treatCount = $treats.children().children().length;
 
     if (treatCount % 2 === 0) {
-      // add a treat row
+      // add a treat row every 2 treats
       $treats.append('<div class="treat row"></div>');
     }
 

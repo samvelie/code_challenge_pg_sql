@@ -18,7 +18,7 @@ GET requests can pass some data to the server as part of the URL (ex. see below 
 
 ## TODO
 
-1. Fork and clone this repository.
+1. Fork and clone this repository. It `does not` have all the npm modules you will need.
 2. Take some time to look at the given code. What code is needed and what will be removed once the server side code is generated?
 3. Design and create the database. Be sure to commit the create table syntax in the `create_database.sql` file.
 4. Build out the server routes described above.
