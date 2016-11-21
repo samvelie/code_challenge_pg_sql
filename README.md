@@ -11,7 +11,7 @@ database. In fact, said developer even styled the entire application!
 1. Fork and clone this repository. **It does not have all the npm modules you will need.**
 2. You will not need to change the client side code (HTML, CSS, nor JavaScript);
 3. Design and create the database. Be sure to commit the create table syntax in the `create_database.sql` file.
-4. Build out the server routes described above.
+4. Build out the server routes described below.
 
 ## Database
 
@@ -30,7 +30,7 @@ VALUES ('Cupcake', 'A delicious cupcake', '/assets/cupcake.jpg'),
 ('Donuts', 'Mmmm donuts', '/assets/donuts.jpg');
 ```
 
-#### Base Mode
+#### Required Mode
 
 Build out these routes on your server:
 
@@ -42,3 +42,7 @@ Build out these routes on your server:
 Create a route to handle the search box in the top-right of our page. Recall how we handle these optional parameters...
 
 * `GET /treats/<search terms>` should return only treats that match the query parameter
+
+#### Pro Mode
+
+Still have time? Build out the `Update` and `Delete` features. You will need to change the client side markup and JS.
