@@ -6,16 +6,24 @@ Your front-end developer has created all of the client-side code
 necessary to view, add, and search for treats from the treats
 database. In fact, said developer even styled the entire application!
 
+
+## Remember
+A friendly reminder that this is simply a way for us to see how you are individually doing with the technology. If this is no problem, great. If you are struggling with it, get done what you can and still submit. Just relax and show us what you know!
+
+Thanks and good luck!
+
+
 ## Instructions
 
 1. Fork and clone this repository. **It does not have all the npm modules you will need.**
 2. You will not need to change the client side code (HTML, CSS, nor JavaScript);
 3. Design and create the database. Be sure to commit the create table syntax in the `create_database.sql` file.
 4. Build out the server routes described below.
+5. Once you are complete, check your work into a new repo and post it on GitHub. Submit this link with your assignment.
 
 ## Database
 
-Great a `treats` table with the following columns:
+Create a `treats` table with the following columns:
 
 * `id` (this will be your primary key)
 * `name` (short string)
