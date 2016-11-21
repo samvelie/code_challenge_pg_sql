@@ -1,4 +1,4 @@
-# Code Challenge - Week 4 (SQL Databases)
+# Code Challenge - Week 4 (SQL Databases and Server Integration)
 
 ## Overview
 
@@ -42,7 +42,3 @@ Build out these routes on your server:
 Create a route to handle the search box in the top-right of our page. Recall how we handle these optional parameters...
 
 * `GET /treats/<search terms>` should return only treats that match the query parameter
-
-
-## Entity Relational Diagram
-![ERD treat table](images/treat-table.png)
