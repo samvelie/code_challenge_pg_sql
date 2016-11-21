@@ -16,7 +16,7 @@ Thanks and good luck!
 ## Instructions
 
 1. Fork and clone this repository.
-2. Run `npm install`. **The package.json does not include all the npm modules you will need.**
+2. Run `npm install` **The package.json file does NOT include all the npm modules you will need.**
 2. You will not need to change the client side code (HTML, CSS, nor JavaScript);
 3. Design and create the database. Be sure to commit the create table syntax in the `create_database.sql` file.
 4. Build out the server routes described below.
