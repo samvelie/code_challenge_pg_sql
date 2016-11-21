@@ -2,27 +2,47 @@
 
 ## Overview
 
-You have been provided with the HTML and JavaScript of an application to manage our treats. The client side JavaScript includes AJAX calls to a node/express server. Yet the AJAX calls are all failing.
+Your front-end developer has created all of the client-side code
+necessary to view, add, and search for treats from the treats
+database. In fact, said developer even styled the entire application!
 
-You will need to build up the server side code and database in order to fulfill our client side requests. Add the following routes. Do them in the suggested order below.
+## Instructions
+
+1. Fork and clone this repository. **It does not have all the npm modules you will need.**
+2. You will not need to change the client side code (HTML, CSS, nor JavaScript);
+3. Design and create the database. Be sure to commit the create table syntax in the `create_database.sql` file.
+4. Build out the server routes described above.
+
+## Database
+
+Great a `treats` table with the following columns:
+
+* `id` (this will be your primary key)
+* `name` (short string)
+* `description` (lots of text)
+* `pic` (this is a string URL to a supplied image for this treat)
+
+It may be helpful to insert some rows into your new table so your `GET` route is easier to make.
+
+```SQL
+INSERT INTO treats (name, description, pic)
+VALUES ('Cupcake', 'A delicious cupcake', '/assets/cupcake.jpg'),
+('Donuts', 'Mmmm donuts', '/assets/donuts.jpg');
+```
 
 #### Base Mode
+
+Build out these routes on your server:
 
 * `GET /treats` returns a list of potential treats (e.g. cupcakes, goldfish, etc) and their image URLs.
 * `POST /treats` expects a treat description and link to a url image.
 
 #### Hard Mode
+
 Create a route to handle the search box in the top-right of our page. Recall how we handle these optional parameters...
 
 * `GET /treats/<search terms>` should return only treats that match the query parameter
 
-## TODO
-
-1. Fork and clone this repository. **It does not have all the npm modules you will need.**
-2. Take some time to look at the given code. What code is needed and what will be removed once the server side code is generated?
-3. Design and create the database. Be sure to commit the create table syntax in the `create_database.sql` file.
-4. Build out the server routes described above.
-5. Remove static HTML that will be generated via AJAX calls once the server side is hooked up and responding to our requests.
 
 ## Entity Relational Diagram
 ![ERD treat table](images/treat-table.png)
