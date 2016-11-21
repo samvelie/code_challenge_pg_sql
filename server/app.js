@@ -4,6 +4,7 @@ var path = require('path');
 var port = process.env.PORT || 3000;
 var connectionString = "postgres://localhost:5432/sigma";
 
+/*** Build out a module to manage our treats requests. ***/
 
 
 app.get('/', function(req, res) {
