@@ -1,3 +1,3 @@
 -- Database name
 
--- Document you create tables pSQL here
+-- Document your create tables SQL here
