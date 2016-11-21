@@ -44,7 +44,7 @@ VALUES ('Cupcake', 'A delicious cupcake', '/assets/cupcake.jpg'),
 Build out these routes on your server:
 
 * `GET /treats` returns a list of potential treats (e.g. cupcakes, goldfish, etc) and their image URLs.
-* `POST /treats` expects a treat type, description, and the path/url for the image. Take a look at the assets folder for which images we have to work with.
+* `POST /treats` expects a treat type, description, and the path/url for the image. Take a look at the `/server/public/assets` folder for which images we have to work with.
 
 #### Hard Mode
 
