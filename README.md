@@ -48,10 +48,4 @@ Build out these routes on your server:
 
 #### Hard Mode
 
-Create a route to handle the search box in the top-right of our page. Recall how we handle these optional parameters...
-
-* `GET /treats/<search terms>` should return only treats that match the query parameter
-
-#### Pro Mode
-
 Still have time? Build out the `Update` and `Delete` features. You will need to change the client side markup and JS.
