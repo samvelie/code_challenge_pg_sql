@@ -1,0 +1,23 @@
+{
+  "name": "code_challenge_pg_sql",
+  "version": "1.0.0",
+  "description": "Solo Code Challenge for SQL",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "author": "kris@primeacademy.io",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdszafranski/code_challenge_pg_sql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kdszafranski/code_challenge_pg_sql/issues"
+  },
+  "homepage": "https://github.com/kdszafranski/code_challenge_pg_sql#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
