@@ -31,6 +31,30 @@ router.get('/', function(req, res) {
   });//end pool.connect
 });//end router.get
 
+router.get('/:search', function(req, res) {
+  console.log('hit my search route', req.params.search);
+  var sqlSearchTerm = '%' + req.params.search + '%';
+  pool.connect(function(err, client, done) {
+    if(err){
+      console.log(err);
+      res.sendStatus(500);
+    } else {
+      client.query('SELECT * FROM treats WHERE name ILIKE $1 OR description ILIKE $1 or pic ILIKE $1;',
+      [sqlSearchTerm],
+      function (err, result) {
+        done();
+        if(err){
+          console.log(err);
+          res.sendStatus(500);
+        } else {
+          console.log(result.rows);
+          res.status(200).send(result.rows);
+        }
+      }); // end client.query
+    }//end else statement inside pool.connect
+  });//end pool.connect
+});//end router.get
+
 router.post('/', function(req,res){
   console.log('hit my post treats route with', req.body);
   var treatObject = req.body;

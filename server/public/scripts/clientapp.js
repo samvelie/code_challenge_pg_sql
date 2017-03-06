@@ -21,6 +21,13 @@ $(document).ready(function () {
     postTreat(newTreat);
   });
 
+  /** Search Treat **/
+  $('#searchButton').on('click', function () {
+    var search = $('#search').val();
+    searchTreats(search);
+
+  })
+
   /**---------- AJAX Functions ----------**/
 
   // GET /treats
@@ -37,6 +44,22 @@ $(document).ready(function () {
       });
     });
   }
+
+  // search /treats
+    function searchTreats(searchTerm){
+      $.ajax({
+        method: 'GET',
+        url: '/treats/' + searchTerm,
+      })
+      .done(function (treatArray) {
+        console.log('Search /treats returned ', treatArray);
+
+        $.each(treatArray, function (index, treat) {
+          clearDom();
+          appendTreat(treat);
+        });
+      });
+    }
 
   // POST /treats
   function postTreat(treat) {
