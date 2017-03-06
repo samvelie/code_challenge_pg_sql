@@ -2,9 +2,7 @@
 
 ## Overview
 
-Your front-end developer has created all of the client-side code
-necessary to view, add, and search for treats from the treats
-database. In fact, said developer even styled the entire application!
+Your front-end developer has created all of the client-side code necessary to view and add treats from the treats database. In fact, said developer even styled the entire application and put in a couple of hard-coded examples of what the view will look like.
 
 
 ## Remember
