@@ -17,7 +17,7 @@ $(document).ready(function () {
       description: treatDescription,
       url: treateURL
     };
-
+    console.log('clicked save for', newTreat);
     postTreat(newTreat);
   });
 
