@@ -3,13 +3,17 @@ var app = express();
 var path = require('path');
 var port = process.env.PORT || 3000;
 
+
+
 /*** Build out a module to manage our treats requests. ***/
-
-
+var treats = require('./routes/treats')
+app.use('/treats', treats);
 
 
 // Get static files
 app.use(express.static('./server/public'));
+
+
 
 // Get index.html
 app.get('/', function(req, res) {
