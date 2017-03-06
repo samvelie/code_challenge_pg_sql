@@ -4,14 +4,7 @@ $(document).ready(function () {
   getTreats();
 
   /**---------- Event Handling ----------**/
-  $('#searchButton').on('click', function (event) {
-    event.preventDefault();
-
-    var queryString = $('#search').val();
-
-    searchTreats(queryString);
-  });
-
+  /** Save New Treat **/
   $('#saveNewButton').on('click', function(event) {
     event.preventDefault();
 
@@ -40,24 +33,6 @@ $(document).ready(function () {
       console.log('GET /treats returned ', treatArray);
 
       $.each(treatArray, function (index, treat) {
-        appendTreat(treat);
-      });
-    });
-  }
-
-  // Search GET /treats/thing
-  function searchTreats(query) {
-    $.ajax({
-      method: 'GET',
-      url: '/treats/' + query,
-    })
-    .done(function (treatArray) {
-      console.log('GET /treats/', query, 'returned ', treatArray);
-
-      clearDom();
-
-      $.each(treatArray, function (index, treat) {
-        // add this treat to the DOM
         appendTreat(treat);
       });
     });
